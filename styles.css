@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(255, 140, 0);
+}
+body {
+  background: url("https://wallpaperaccess.com/full/39608.jpg") no-repeat
+    center/cover fixed;
+}
+.section-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 4rem auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 5px;
+}
+@media screen and (min-width: 800px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+  .info {
+    display: grid;
+    place-items: center;
+  }
+  .limit-box {
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section-center {
+    padding: 0.5rem;
+  }
+  .img-container {
+    margin-bottom: 2rem;
+  }
+  h2 {
+    margin-bottom: 2rem;
+  }
+  .description {
+    margin-bottom: 2rem;
+  }
+}
+.img-container img {
+  width: 100%;
+  border-radius: 5px;
+}
+.deadline {
+  display: flex;
+}
+h2 {
+  text-transform: capitalize;
+}
+.limit {
+  display: flex;
+  justify-content: space-evenly;
+}
+.limit-box {
+  width: 6rem;
+  height: 5rem;
+  background-color: rgb(50, 50, 50);
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+.time-up {
+  color: red;
+  font-size: large;
+}
